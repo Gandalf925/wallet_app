@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>My wallet</h1>
+  <p>my_address:{{ wallet.address }}</p>
+  <p>value:{{ wallet.bal }}BSV</p>
+  <p>as {{ wallet.jpy_bal }}円</p>
+  {{ send_address }}
+  {{ value }}
+  {{ tx }}
+
+  <form action="", method="POST">
+    <h2>Send</h2>
+    <div>
+      <h3>送信先アドレス<input type="text", name="send_address" value="mkDJLvshgucr8pZC1W2nsXQ8jJxqdGkH5V"></h3>
+      <h3>金額（jpy）<input type="text", name="value"></h3>
+      <input type="submit", value="送金">
+    </div>
+  </form>
+</body>
+</html>
